@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-  var circleOrEx = "o"; // what does this variable represent
-  var isGameInProgress = true; // what does this variable represent
-  var winningCombos = { // what does this variable represent; explain what the keys and values represent
+  var circleOrEx = "o"; // this is the o symbol put in the box
+  var isGameInProgress = true; // The timeframe the game is being played
+  var winningCombos = { // the combos that will win the game and end the game
     0: [ //0 is key
       [1, 2], //this multiDimensional Array is values
       [3, 6],
@@ -47,13 +47,13 @@ $(document).ready(function() {
     ]
   };
 
-  // Explain what this event does
+  //this decides where the x or o when clicked
   $("#board").find("div").on("click", function() {
 
-    if (isGameInProgress && $(this).hasClass("empty")) { /// Explain these conditions
+    if (isGameInProgress && $(this).hasClass("empty")) { /// if the box is empty add a circle or ex to the end
       $(this).removeClass("empty").append("<span class='" + circleOrEx + "'>" + circleOrEx + "</span");
 
-      checkIfWon($(this).index(), circleOrEx); //Explain
+      checkIfWon($(this).index(), circleOrEx); //find out who wins by the winningcombos in the index
 
       if (circleOrEx === "o") {
         circleOrEx = "x";
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
   });
 
-  // Explain what this event does
+  //this activates a new game by clicking on the button
   $("#newGame").on("click", function() {
 
     var boardSquares = $("#board").find("div"); //what is this variable
@@ -79,7 +79,7 @@ $(document).ready(function() {
       $(".container").find(".nine").first().html($("#board").html());
     }
 
-    //Explain this each function
+    //empty the HTML while the game is in progress
     boardSquares.each(function() {
       $(this).addClass("empty").empty();
     })
@@ -87,6 +87,7 @@ $(document).ready(function() {
   })
 
   //Explain this funciton, describe the parameters; what are the possible values of the paramaters
+  //This function selects the square that wins the game with the winning combos
   function checkIfWon(chosenSquare) {
 
     var mulitArr = winningCombos[chosenSquare];
