@@ -275,123 +275,55 @@ $(#answer6.html("Answer s: " + rangeAnswer.join());
     <h2>Question Seven</h2>
 <pre>code will go here in display</pre>
 <button type="button7" class="btn btn-default"> Question Seven</button>
-<div id="answer7"></div> <!--put answer here-->
+<div id="answer7"></div> <!--put answer here-->$("‪#‎Q7button‬").on("click", function() {
+var arr = [1,2,3,4];
+var total=0;
+for(var i in arr) { total += arr[i]; }
+$("‪#‎Q7result‬").html(total);
+});
 <!--naming convention to use is camelCase (the way of typing) -->
 
 <div id="question8" class="tab-pane fade">
     <h2>Question Eight</h2>
 <pre>code will go here in display</pre>
 <button type="button8" class="btn btn-default"> Question Eight</button>
-<div id="answer8"></div> <!--put answer here-->
+<div id="answer8"></div> <!--put answer here-->function range (end,start){
+var arr = [];
+//arr.push(5);
+//arr.push(1);
+for (end; end >= start; end--){
+arr.push(end);
+}
+return arr;
+}
+$("‪#‎Q8button‬").on("click", function() {
+
+var reverseArray = range(5,1);
+$("‪#‎Q8result‬").html("Answer is: " + reverseArray.join());
+});
 <!--naming convention to use is camelCase (the way of typing) -->
 
 <div id="question9" class="tab-pane fade">
     <h2>Question Nine</h2>
 <pre>code will go here in display</pre>
 <button type="button9" class="btn btn-default"> Question Nine</button>
-<div id="answer9"></div> <!--put answer here-->
+<div id="answer9"></div> <!--put answer here-->function range (end,start){
+var arr = [];
+//arr.push(5);
+//arr.push(1);
+for (end; end >= start; end--){
+arr.push(end);
+}
+return arr;
+}
+$("‪#‎Q9button‬").on("click", function() {
+//var reverseArray = range(5,1); 
+var reverseArrayInPlace =range(5,1);
+$("‪#‎Q9result‬").html("Answer is: " + reverseArrayInPlace);
+});
 <!--naming convention to use is camelCase (the way of typing) -->
 
 
-
-Question 7. The sum of a range
-
-Write a sum function that takes an array of numbers and returns the sum of these
-
-numbers.
-
-sum(range(1, 10);
-
-// 55.
-
-BONUS modify your range function to take an optional third argument that indicates
-
-the “step” value used to build up the array. If no step is given, the array elements go
-
-up by increments of one, corresponding to the old behavior. The function call
-
-range(1, 10, 2) should return [1, 3, 5, 7, 9].
-
-Make sure it also works with negative step values so that range(5, 2, ­1) produces
-
-[5, 4, 3, 2].
-
-sum(range(1, 10)));
-
-// → 55
-
-range(5, 2, ­1));
-
-// → [5, 4, 3, 2]
-
-Question 8. Reversing an array
-
-Arrays have a method .reverse(), which changes the array by inverting the order
-
-in which its elements appear.
-
-For this exercise, write a function, reverseArray that takes an array as argument
-
-and produces a new array that has the same elements in the inverse order.
-
-(You may not use the standard .reverse() method.)
-
-reverseArray(["A", "B", "C"]));
-
-// → ["C", "B", "A"];
-
-Question 9. Reverse an array in place
-
-Write a function reverseArrayInPlace. It has a similar result to the function you
-
-made in 8 but it modifies the array given in order to reverse its elements.
-
-i.e. it does not create new array.
-
-(You may not use the standard .reverse() method.)
-
-//swap values at the other end
-1,5
-5,1
-[5,2,3,4,1]
-
-var arrayValue = [1, 2, 3, 4, 5];
-
-reverseArrayInPlace(arrayValue);
-
-// → [5, 4, 3, 2, 1]
-<script>
-
-
-$(document).ready(function(){
-//always nees to comment a function
-//say what it does
-//say what the parameters are
-//this function returns a range of values in an array
-//it takes two parameters, start and end
-function range(start, end){
-  //vlaues will go in this array
-var arr = [];
-
-//arr.push(2);
-//arr.push(5);
-if(start<= end){
- for(start; start <=e nd; start++){  console.log("start:" + start);
-arr.push(start);
-}
-}
-return count;
-
-  }
-
-  $("#button6").on("click",function(){
-      alert("6");
-
-var rangeAnswer = range(2,6);
-
-$(#answer6.html("Answer s: " + rangeAnswer.join());
-
-}
 </script>
 </body>
 </div>
