@@ -2,13 +2,61 @@
 <html>
 <meta charset="UTF-8">
 <head>
+  <title>Questions 1-9</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-Question Three Code
+</head>
+<body>
+<div class="container">
+  <div class="bs-example">
+    <nav role="navigation" class="navbar navbar-inverse">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">Katrina Gowan</a>
+      </div>
 
-function chessBoard() {
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+    <ul class="navtabs">
+      <li class="active"><a data-toggle="tab" href="#question1">Q1</a>
+<li><a data-toggle="tab" href="#question2">Q2</a></li>
+<li><a data-toggle="tab" href="#question3">Q3</a></li>
+<li><a data-toggle="tab" href="#question4">Q4</a></li>
+<li><a data-toggle="tab" href="#question5">Q5</a></li>
+<li><a data-toggle="tab" href="#question6">Q6</a></li>
+<li><a data-toggle="tab" href="#question7">Q7</a></li>
+<li><a data-toggle="tab" href="#question8">Q8</a></li>
+<li><a data-toggle="tab" href="#question9">Q9</a></li>
+</ul>
+</nav>
+
+    <div id="question1" class="tab-pane fade">
+
+      <h2>Question One</h2>
+<pre> </pre>
+<button type="button1" class="btn btn-default"> Question One</button>
+<div id="answer1"></div> <!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
+</div>
+<div id="question2" class="tab-pane fade">
+    <h2>Question Two</h2>
+<pre>code will go here in display</pre>
+<button type="button2" class="btn btn-default"> Question Two</button>
+<div id="answer2"></div>
+</div> <!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
+
+<div id="question3" class="tab-pane fade">
+    <h2>Question Three</h2>
+<pre>function chessBoard() {
 
 var size = prompt("Please enter a Number");
 
@@ -46,11 +94,53 @@ $("#q3button").on("click", function() {
 
 chessBoard();
 
-});
+});</pre>
+<button type="button3" class="btn btn-default"> Question Three</button>
+<div id="answer3">function chessBoard() {
 
-Question 4
+var size = prompt("Please enter a Number");
 
-function countBs(bString) {
+var line = '';
+
+var print = "";
+
+var i = 0;
+
+for (i = 0; i < size / 2; i++) {
+
+line = print + line + '# ';
+
+}
+
+for (i = 0; i < size; i++) {
+
+if (i % 2 === 0) {
+
+print = print + (' ' + line) + "<br/>";
+
+} else {
+
+print = print + (line) + "<br/>";
+
+}
+
+}
+
+$("#q3result").html(print);
+
+}
+
+$("#q3button").on("click", function() {
+
+chessBoard();
+
+});</div>
+</div><!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
+
+<div id="question4" class="tab-pane fade">
+      <h2>Question Four</h2>
+<pre>function countBs(bString) {
 
 var count = 0;
 
@@ -78,7 +168,15 @@ $("#q4result").html(x);
 
 });
 
-Question Five
+</pre>
+<button type="button4" class="btn btn-default"> Question Four</button>
+<div id="answer4"></div>
+</div> <!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
+
+ <div id="question5" class="tab-pane fade">
+    <h2>Question Five</h2>
+<pre>
 
 function countChar(cString, charMatch) {
 
@@ -109,44 +207,91 @@ var t = countChar(inputOne, inputTwo)
 $("#q5result").html(t);
 
 });
-<div id="question6">
+</pre>
+<button type="button5" class="btn btn-default"> Question Five</button>
+<div id="answer5"></div>
+</div><!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
 
-Question 6. Range array
+<div id="question6" class="tab-pane fade">
+    <h2>Question Six</h2>
+<pre>
+$(document).ready(function(){
+//always nees to comment a function
+//say what it does
+//say what the parameters are
+//this function returns a range of values in an array
+//it takes two parameters, start and end
+function range(start, end){
+  //vlaues will go in this array
+var arr = [];
 
-Write a range function that takes two arguments, start and end, and returns an array 
+//arr.push(2);
+//arr.push(5);
+if(start<= end){
+ for(start; start <=e nd; start++){  console.log("start:" + start);
+arr.push(start);
+}
+}
+return count;
 
-containing all the numbers from start up to (and including) end.
+  }
 
-(Note that you can use the .join() method on an array to output an array)
+  $("#button6").on("click",function(){
+      alert("6");
 
-http://www.w3schools.com/jsref/jsref_join.asp
-<?php
-$number = range(2,5);
-print_r ($number);
-?>
+var rangeAnswer = range(2,6);
 
-var number = ["2","3","4","5"];
-var count = number.join();
-</div>
+$(#answer6.html("Answer s: " + rangeAnswer.join());
+
+}</pre>
+<button type="button6" class="btn btn-default"> Question Six</button>
+<div id="answer6"></div>
+</div> <!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
+
+<div id="question7" class="tab-pane fade">
+    <h2>Question Seven</h2>
+<pre>code will go here in display</pre>
+<button type="button7" class="btn btn-default"> Question Seven</button>
+<div id="answer7"></div> <!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
+
+<div id="question8" class="tab-pane fade">
+    <h2>Question Eight</h2>
+<pre>code will go here in display</pre>
+<button type="button8" class="btn btn-default"> Question Eight</button>
+<div id="answer8"></div> <!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
+
+<div id="question9" class="tab-pane fade">
+    <h2>Question Nine</h2>
+<pre>code will go here in display</pre>
+<button type="button9" class="btn btn-default"> Question Nine</button>
+<div id="answer9"></div> <!--put answer here-->
+<!--naming convention to use is camelCase (the way of typing) -->
+
+
+
 Question 7. The sum of a range
 
-Write a sum function that takes an array of numbers and returns the sum of these 
+Write a sum function that takes an array of numbers and returns the sum of these
 
-numbers. 
+numbers.
 
 sum(range(1, 10);
 
 // 55.
 
-BONUS modify your range function to take an optional third argument that indicates 
+BONUS modify your range function to take an optional third argument that indicates
 
-the “step” value used to build up the array. If no step is given, the array elements go 
+the “step” value used to build up the array. If no step is given, the array elements go
 
-up by increments of one, corresponding to the old behavior. The function call 
+up by increments of one, corresponding to the old behavior. The function call
 
 range(1, 10, 2) should return [1, 3, 5, 7, 9].
 
-Make sure it also works with negative step values so that range(5, 2, ­1) produces 
+Make sure it also works with negative step values so that range(5, 2, ­1) produces
 
 [5, 4, 3, 2].
 
@@ -160,13 +305,13 @@ range(5, 2, ­1));
 
 Question 8. Reversing an array
 
-Arrays have a method .reverse(), which changes the array by inverting the order 
+Arrays have a method .reverse(), which changes the array by inverting the order
 
-in which its elements appear. 
+in which its elements appear.
 
-For this exercise, write a function, reverseArray that takes an array as argument 
+For this exercise, write a function, reverseArray that takes an array as argument
 
-and produces a new array that has the same elements in the inverse order. 
+and produces a new array that has the same elements in the inverse order.
 
 (You may not use the standard .reverse() method.)
 
@@ -176,17 +321,57 @@ reverseArray(["A", "B", "C"]));
 
 Question 9. Reverse an array in place
 
-Write a function reverseArrayInPlace. It has a similar result to the function you 
+Write a function reverseArrayInPlace. It has a similar result to the function you
 
-made in 8 but it modifies the array given in order to reverse its elements. 
+made in 8 but it modifies the array given in order to reverse its elements.
 
 i.e. it does not create new array.
 
 (You may not use the standard .reverse() method.)
+
+//swap values at the other end
+1,5
+5,1
+[5,2,3,4,1]
 
 var arrayValue = [1, 2, 3, 4, 5];
 
 reverseArrayInPlace(arrayValue);
 
 // → [5, 4, 3, 2, 1]
+<script>
+
+
+$(document).ready(function(){
+//always nees to comment a function
+//say what it does
+//say what the parameters are
+//this function returns a range of values in an array
+//it takes two parameters, start and end
+function range(start, end){
+  //vlaues will go in this array
+var arr = [];
+
+//arr.push(2);
+//arr.push(5);
+if(start<= end){
+ for(start; start <=e nd; start++){  console.log("start:" + start);
+arr.push(start);
+}
+}
+return count;
+
+  }
+
+  $("#button6").on("click",function(){
+      alert("6");
+
+var rangeAnswer = range(2,6);
+
+$(#answer6.html("Answer s: " + rangeAnswer.join());
+
+}
+</script>
+</body>
+</div>
 </html>
