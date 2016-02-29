@@ -41,62 +41,61 @@
     <div id="question1" class="tab-pane fade">
 
       <h2>Question One</h2>
-<pre> </pre>
+<pre>Click button for answer</pre>
 <button type="button1" class="btn btn-default"> Question One</button>
-<div id="answer1"></div> <!--put answer here-->
+<div id="answer1"></div> <!--put answer here-->function getTriangle(){
+    var str = "";
+    // the string goes here
+    for (var i = 1; i <= 6; i++){
+    //write i stars + <br/>
+    for(var j = 1; j <= i; j++){
+            str = str + "#"
+            }
+        str = str + < /br>
+        }
+    $("#q1result").html(str);
+                }
+            
+            $("#q1Button").on("click", function() {
+                    getTriangle();
+            });
 <!--naming convention to use is camelCase (the way of typing) -->
 </div>
 <div id="question2" class="tab-pane fade">
     <h2>Question Two</h2>
-<pre>code will go here in display</pre>
+<pre>Click button for answer</pre>
 <button type="button2" class="btn btn-default"> Question Two</button>
-<div id="answer2"></div>
+<div id="answer2"></div>function printFooBar() {
+        var print = "";
+        var number = Number(1);
+        for (i = Number(1); i <= 100; i++) {
+
+          if (i % 3 == 0 && i % 5 == 0) {
+            print = print + "FooBar" + "<br/>";
+          } else if (i % 3 == 0) {
+            print = print + "Foo" + "<br/>";
+          } else if (i % 5 == 0) {
+            print = print + "Bar " + "<br/>";
+          } else {
+            print = print + i  +"<br/>";
+          }
+
+        }
+        $("#q2result").html(print);
+      }
+
+      $("#q2button").on("click", function() {
+        printFooBar();
+
+      });
 </div> <!--put answer here-->
 <!--naming convention to use is camelCase (the way of typing) -->
 
 <div id="question3" class="tab-pane fade">
     <h2>Question Three</h2>
-<pre>function chessBoard() {
-
-var size = prompt("Please enter a Number");
-
-var line = '';
-
-var print = "";
-
-var i = 0;
-
-for (i = 0; i < size / 2; i++) {
-
-line = print + line + '# ';
-
-}
-
-for (i = 0; i < size; i++) {
-
-if (i % 2 === 0) {
-
-print = print + (' ' + line) + "<br/>";
-
-} else {
-
-print = print + (line) + "<br/>";
-
-}
-
-}
-
-$("#q3result").html(print);
-
-}
-
-$("#q3button").on("click", function() {
-
-chessBoard();
-
-});</pre>
+<pre>Click button for answer</pre>
 <button type="button3" class="btn btn-default"> Question Three</button>
-<div id="answer3">function chessBoard() {
+<div id="answer3"></div>function chessBoard() {
 
 var size = prompt("Please enter a Number");
 
@@ -134,13 +133,16 @@ $("#q3button").on("click", function() {
 
 chessBoard();
 
-});</div>
+});
 </div><!--put answer here-->
 <!--naming convention to use is camelCase (the way of typing) -->
 
 <div id="question4" class="tab-pane fade">
       <h2>Question Four</h2>
-<pre>function countBs(bString) {
+<pre>Click button for answer</pre>
+<button type="button4" class="btn btn-default"> Question Four</button>
+<div id="answer4"></div>
+</div> <!--put answer here-->function countBs(bString) {
 
 var count = 0;
 
@@ -168,17 +170,14 @@ $("#q4result").html(x);
 
 });
 
-</pre>
-<button type="button4" class="btn btn-default"> Question Four</button>
-<div id="answer4"></div>
-</div> <!--put answer here-->
 <!--naming convention to use is camelCase (the way of typing) -->
 
  <div id="question5" class="tab-pane fade">
     <h2>Question Five</h2>
-<pre>
-
-function countChar(cString, charMatch) {
+<pre>Click button for answer</pre>
+<button type="button5" class="btn btn-default"> Question Five</button>
+<div id="answer5"></div>
+</div><!--put answer here-->function countChar(cString, charMatch) {
 
 var count = 0;
 
@@ -207,16 +206,14 @@ var t = countChar(inputOne, inputTwo)
 $("#q5result").html(t);
 
 });
-</pre>
-<button type="button5" class="btn btn-default"> Question Five</button>
-<div id="answer5"></div>
-</div><!--put answer here-->
 <!--naming convention to use is camelCase (the way of typing) -->
 
 <div id="question6" class="tab-pane fade">
     <h2>Question Six</h2>
-<pre>
-$(document).ready(function(){
+<pre>Click button for answer</pre>
+<button type="button6" class="btn btn-default"> Question Six</button>
+<div id="answer6"></div>
+</div> <!--put answer here-->$(document).ready(function(){
 //always nees to comment a function
 //say what it does
 //say what the parameters are
@@ -244,10 +241,7 @@ var rangeAnswer = range(2,6);
 
 $(#answer6.html("Answer s: " + rangeAnswer.join());
 
-}</pre>
-<button type="button6" class="btn btn-default"> Question Six</button>
-<div id="answer6"></div>
-</div> <!--put answer here-->
+}
 <!--naming convention to use is camelCase (the way of typing) -->
 
 <div id="question7" class="tab-pane fade">
