@@ -189,7 +189,7 @@ return count;
 
 $("#q4button").on("click", function() {
 
-var userInput = prompt("");
+var userInput = prompt("Write something");
 
 var x = countBs(userInput);
 
@@ -240,7 +240,7 @@ $("#q5result").html(t);
 <button type="button6" class="btn btn-default"> Question Six</button>
 <div id="answer6"></div>
 </div> <!--put answer here-->$(document).ready(function(){
-//always nees to comment a function
+//always needs to comment a function
 //say what it does
 //say what the parameters are
 //this function returns a range of values in an array
@@ -252,7 +252,7 @@ var arr = [];
 //arr.push(2);
 //arr.push(5);
 if(start<= end){
- for(start; start <=e nd; start++){  console.log("start:" + start);
+ for(start; start <=end; start++){  console.log("start:" + start);
 arr.push(start);
 }
 }
@@ -283,8 +283,8 @@ return sm;
 }
 
 $("#q7button").on("click", function() {
-var startNum = prompt ("Please enter the first number")
-var endNum = prompt("Please enter the second number")
+var startNum = prompt ("Enter the first number")
+var endNum = prompt("Enter the second number")
 
 var sumTotal = sum(range(startNum,endNum))
 $("#q7result").html( "Answer is:" + " " + sumTotal);
@@ -330,11 +330,161 @@ var reverseArrayInPlace =range(5,1);
 $("‪#‎Q9result‬").html("Answer is: " + reverseArrayInPlace);
 });
 <!--naming convention to use is camelCase (the way of typing) -->
-
-
-
-
-</script>
+<script>
+    $(document).ready(function() {
+     
+      function getTriangle() {
+        var str = "";
+        // the string goes here
+        for (var i = 1; i <= 7; i++) {
+          for (var j = 1; j <= i; j++) { 
+            str = str + "#"; 
+          }
+          str = str + "<br/>";
+        }
+        $("#q1result").html(str);
+      }
+      //End of question 1
+      $("#q1button").on("click", function() {
+        getTriangle(); 
+      }); 
+      //Question 2
+      function printFooBar() {
+        var print = "";
+        var number = Number(1);
+        for (i = Number(1); i <= 100; i++) {
+          if (i % 3 == 0 && i % 5 == 0) {
+            print = print + "FooBar" + "<br/>";
+          } else if (i % 3 == 0) { 
+            print = print + "Foo" + "<br/>";
+          } else if (i % 5 == 0) {
+            print = print + "Bar " + "<br/>";
+          } else { 
+            print = print + i + "<br/>";
+          }
+        }
+        $("#q2result").html(print);
+      }
+      $("#q2button").on("click", function() {
+        printFooBar();
+      });
+      // End of second question
+      //Start of third question
+      function chessBoard() {
+        var size = prompt("Enter a Number"); 
+        var line = '';
+        var print = " ";
+        var i = 0;
+        for (i = 0; i < size / 2; i++) {
+          line = print + line + '# '; 
+        }
+        for (i = 0; i < size; i++) { 
+          if (i % 2 === 0) { 
+            print = print + (' ' + line) + "<br/>";
+          } else {
+            print = print + (line) + "<br/>";
+          }
+        }
+        $("#q3result").html(print);
+      }
+      $("#q3button").on("click", function() {
+        chessBoard();
+      });
+      //End of third question
+      // Start of question 4
+      function countBs(bString) {
+        var count = 0;
+        for (var i = 0; i < bString.length; i++) {
+          if (bString.charAt(i) == 'B') {
+            count = (count + 1); 
+          }
+        }
+        return count; 
+      }
+      $("#q4button").on("click", function() {
+        var userInput = prompt("Write something"); 
+        var x = countBs(userInput); 
+        $("#q4result").html(x); 
+      });
+      //End question 4
+      //Start question 5
+      function countChar(cString, charMatch) {
+        var count = 0; 
+        for (var i = 0; i < cString.length; i++) { 
+          if (cString.charAt(i) == charMatch) {
+            count = (count + 1);
+          }
+        }
+        return count;
+      }
+      $("#q5button").on("click", function() {
+        var inputOne = prompt("Write something");
+        var inputTwo = prompt("What character do you want?")
+        var t = countChar(inputOne, inputTwo)
+        $("#q5result").html(t);
+      });
+      //End question 5
+      //Start question 6
+      function range(start, end) {
+        var arr = [];
+        if (start <= end) { 
+          for (start; start <= end; start++) { 
+            arr.push(start);
+          }
+        }
+        return arr; 
+      }
+      $("#q6button").on("click", function() {
+        var numberOne = prompt("Please enter the first number") 
+        var numberTwo = prompt("Please enter the second number")
+        var rangeAnswer = range(numberOne, numberTwo);
+        $("#q6result").html("Answer is:" + rangeAnswer.join());
+      });
+      //End question 6
+      //Start question 7
+      function sum(array) {
+        var sm = 0;
+        for (var i = 0; i < array.length; i++) { 
+          sm += parseInt(array[i]); 
+        }
+        return sm; 
+      }
+      $("#q7button").on("click", function() {
+        var startNum = prompt("Enter the first number")
+        var endNum = prompt("Enter the second number")
+        var sumTotal = sum(range(startNum, endNum))
+        $("#q7result").html("Answer is:" + " " + sumTotal);
+      });
+      //End question 7
+      //Start question 8
+      function reverseArray(array) {
+        var rev = [] 
+        for (var i = array.length - 1; i >= 0; i--) { 
+          rev.push(array[i])
+          
+        return rev
+      }
+      $("#q8button").on("click", function() {
+        var list = ["Apples", "Bananas", "Oranges"]
+        $("#q8result").html("Answer is:" + " " + reverseArray(list));
+      });
+      //end question 8
+      // start question 9
+      function arrayReverseInPlace(array) {
+        for (var i = 0; i < array.length/2; i++) {
+          var temp = array[i];
+          array[i] = array[array.length - 1 - i]; 
+          array[array.length-1-i] = temp; 
+        }
+      }
+      $("#q9button").on("click", function() {
+        var listA = ["a", "b", "c"];
+        var ans = reverseArray(listA)
+        $("#q9result").html("The reverse of a, b, c is" + " " + ans);
+      });
+      // end question 9
+    });
+  </script>
 </body>
 </div>
 </html>
