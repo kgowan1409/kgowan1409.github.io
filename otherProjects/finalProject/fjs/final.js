@@ -15,8 +15,14 @@ alert(page);
 })//click
 function getPartial(partial) {
   
-  alert(partial);
+if (partial=="homePage");{
+  alert("1")
+}
+ } else if (partial=="seeStylesPage"){
+   alert("2")
   
+ }else if (partial=="orderPage") {
+   alert("3")
 }
  // 
 getPartial("homePage");
