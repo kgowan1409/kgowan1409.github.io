@@ -15,8 +15,10 @@ alert(page);
 })//click
 function getPartial(partial) {
   
-if (partial=="homePage");{
-  alert("1")
+if (partial == "homePage");{
+  $.get("partials/home.html",function(data){
+    $("#pageContent").html(data);
+  }
 }
  } else if (partial=="seeStylesPage"){
    alert("2")
