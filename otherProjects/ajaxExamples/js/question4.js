@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $("#showInfo").on("click", function() {
+$(document).ready(function(){
+$("#getshowInfo").on("click",function(){
 
     var url = "http://kgowan1409.github.io/otherProjects/ajaxExamples/jsonDatabase/question4.json"
     $.getJSON(url, function(data) {
