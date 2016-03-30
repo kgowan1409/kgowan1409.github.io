@@ -1,7 +1,7 @@
 $(document).ready(function(){
 $("#showInfo").on("click",function(){
 
-$.getJSON("http://Taijah.GitHub.io/OtherProjects/ajaxExamples/jsonDatabase/question4.json" ,function(data){
+$.getJSON("http://kgowan1409.github.io/otherProjects/ajaxExamples/jsonDatabase/question4.json" ,function(data){
 var html="<table class='table table-hover table-striped'>"+
 "<tr><th>Name</th><th>address</th><th>phone</th><th>about</th></tr>";
   $.each(data, function(index, item){
