@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Violins!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="fcss/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-md-12">
+
+    <h1> Order Form </h1>
+
+    <p> Let us know what you would like and your payment information </p>
+    (Notice: order will ship in 5-6 days, you can only change 1 item per order! </p>
+
+
+        <!-- select -->
+        <h2> Choose Your Stlye and Size </h2>
+
+        <select id="mySelect" name="select">
+          <option>Choose Violin </option>
+          <option id="model">Violin</option>
+          <option id="bow">Bow</option>
+          <option id="case">Case</option>
+        </select>
+
+        <br>
+
+        <label class="model-list radio-inline">
+          <input type="radio" name="colour" value="Mermaid Teal"> Mermaid Teal
+        </label>
+
+        <label class="model-list radio-inline">
+          <input type="radio" name="colour" value="Raindbow Road"> Rainbow Road
+        </label>
+
+        <label class="model-list radio-inline">
+          <input type="radio" name="colour" value="Mermaid Teal"> Dark Waterfal
+        </label>
+
+        <label class="bow-list radio-inline">
+          <input type="radio" name="colour" value="Pink Bag"> Pink Bag
+        </label>
+
+        <label class="bow-list radio-inline">
+          <input type="radio" name="colour" value="Flower Sunglasses"> Flower Sunglasses
+        </label>
+
+        <label class="bow-list radio-inline">
+          <input type="radio" name="colour" value="Black Sunglasses"> Black Sunglasses
+        </label>
+
+        <label class="case-list radio-inline">
+          <input type="radio" name="colour" value="Ocean Blue"> Ocean Blue
+        </label>
+
+        <label class="case-list radio-inline">
+          <input type="radio" name="colour" value="Checkerboard"> Checkerboard
+        </label>
+
+        <label class="case-list radio-inline">
+          <input type="radio" name="colour" value="Multicolour"> Multicolour
+        </label>
+
+<div>
+        <select id="mySelect" name="select">
+          <option>Choose A Size </option>
+          <option id="sml">1/4</option>
+          <option id="med">2/4</option>
+          <option id="lrg">3/4</option>
+          <option id="xlarge">4/4 </option>
+        </select>
+      </div>
+
+
+      <h2> Payment Information</h2>
+
+
+      <div class="col-xs-12 col-md-12">
+        <label class="control-label">
+          Card Holder's Name
+        </label>
+        <input type="text" id="name" class="form-control">
+      </div>
+
+      <div class="col-xs-12 col-md-8">
+        <label class="control-label">
+          Card Number
+        </label>
+        <input id="cardNumber" type="text" maxlength="14" placeholder="Card Number" class="form-control input-md">
+      </div>
+
+      <div class="col-xs-12 col-md-4">
+        <label class="control-label">
+          Card CVV
+        </label>
+        <input type="text" id="securityCode" class="form-control" maxlength="3" title="Three digits at back of your card">
+      </div>
+
+      <div class="col-xs-12  col-md-6">
+        <label class="control-label">
+          Card Expiry Month
+        </label>
+        <select id="expirymonth" name="expirymonth" class="form-control">
+          <option value="01">January</option>
+          <option value="02">February</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <label class="control-label">
+          Card Expiry Year
+        </label>
+        <input id="expiryYear" type="text" placeholder="Year eg 2014" class="form-control input-md">
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <label class="control-label">
+          Address
+        </label>
+        <input id="address1" type="text" class="form-control">
+      </div>
+
+      <div class="col-xs-12 col-md-6">
+        <label class="control-label">
+          Postal Code
+        </label>
+        <input type="text" id="zip" class="form-control">
+      </div>
+
+      <div class="col-sm-6 col-xs-6 col-md-6">
+        <label class="control-label">
+          State/Province
+        </label>
+        <input type="text" id="state" class="form-control">
+      </div>
+
+      <div class="col-sm-6 col-xs-6 col-md-6">
+        <label class="control-label">
+          Country
+        </label>
+        <input type="text" class="form-control" id="country">
+      </div>
+
+      <div class="col-md-12">
+        <button id="submitButton" class="btn btn-success">
+          Click Me!
+        </button>
+      </div>
+    <div id='successMsg' class='col-md-12 text-success'></div>
+    </div>
+    <div class="col-xs-12"></div>
+
+<div class="col-md-12">
+  <div id="log"></div>
+</div>
+
+
+       <!-- <div class="col-sm-6 col-xs-6 col-md-6">
+      <button id="myButton" type="button">Click Me!</button>
+    </div>
+    <div id="successMsg" class='col-md-12 text-success'></div>
+  </div> -->
+
+</div>
+
+  <script src="http://kgowan1409.github.io/otherProjects/finalProject/fjs/getFinalNav.js">
+  </script>
+  <script src="fjs/orderNow.js">
+  </script>
+
+
+</body>
+
+</html>
