@@ -1,11 +1,11 @@
-$.get("http://Taijah.GitHub.io/OtherProjects/FinalWebsite/final_partials/nav.html", function(data) {
+$.get("http://kgowan1409.io/otherProjects/finalProject/partials/nav.html", function(data) {
 
   $(document).ready(function() {
 
     $(".container").prepend(data);
 })
 })
-$.get("http://Taijah.GitHub.io/OtherProjects/FinalWebsite/final_partials/footer.html", function(foot) {
+$.get("http://kgowan1409.io/otherProjects/finalProject/partials/footer.html", function(foot) {
 
   $(document).ready(function() {
 
