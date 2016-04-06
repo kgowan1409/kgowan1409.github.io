@@ -1,23 +1,32 @@
 $(document).ready(function(){
-$("#showInfo").on("click",function(){
+  $("#showInfo").on("click",function(){
 
-    var url = "http://kgowan1409.github.io/otherProjects/ajaxExamples/jsonDatabase/question4.json"
-    $.getJSON(url, function(data) {
-      var html = "<div class='col-md-4'>";
+    $.getJSON("jsonDatabase/question4.json", function(data) {
+
+                console.dir(data);
+                  var html="<table class='table table-hover table-striped'>"+
+                "<tr><th>Name</th><th>age</th><th>Company</th></tr>";
+                  $.each(data, function(index, item){
+                  //  $("#data").append(item.name);
+
+                html+="<tr>"+
+                "<td>" +item.name +"</td>"+
+                "<td>"+item.country + "</td>"+
+                "<td>"+item.height + "</td>"+
+                "<td>"+item.eyeColour + "</td>"+
+                 "<td>"+item.birthYear + "</td>"+
+                "</tr>";
+                  }) // each end
 
 
-      $.each(data, function(index, item) {
-        html += "<ul class= 'list-group'>" +
-        "<li class='list-group-item bold'>" + item.name + "</li>" +
-        "<li class='list-group-item'>" + item.country + "</li>" +
-        "<li class='list-group-item'>" + item.height + "</li>" +
-        "<li class='list-group-item'>" + item.eyeColour + "</li>"+
-        "<li class='list-group-item'>" + item.birthYear + "</li>"+
-        "</ul>";
-      })
+                      html+="</table>";
+                      $("#data").append(html);
 
-      html + "</div>";
-      $("#data").append(html);
-    })
-  })
-})
+                    html += '</div>' + //panel
+                      '</div>'; //col-md-4
+                  }) //each person
+
+
+
+}) //click end
+}) // doc end
