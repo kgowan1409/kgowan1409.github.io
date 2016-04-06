@@ -11,10 +11,10 @@ $(document).ready(function(){
 
                 html+="<tr>"+
                 "<td>" +item.name +"</td>"+
-                "<td>"+item.country + "</td>"+
-                "<td>"+item.height + "</td>"+
-                "<td>"+item.eyeColour + "</td>"+
-                 "<td>"+item.birthYear + "</td>"+
+                "<td>"+item.phone + "</td>"+
+                "<td>"+item.email + "</td>"+
+                "<td>"+item.address + "</td>"+
+            
                 "</tr>";
                   }) // each end
 
