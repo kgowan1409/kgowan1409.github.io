@@ -10,14 +10,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-
+<nav>
+  <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="http://kgowan1409.github.io/otherProjects/finalProject/index.html">Home</a></li>
+  <li role="presentation"><a href="#http://kgowan1409.github.io/otherProjects/finalProject/browse.html">Browse</a></li>
+  <li role="presentation"><a href="http://kgowan1409.github.io/otherProjects/finalProject/orderNow.html">Order</a></li>
+  
+</ul>
+  
+</nav>
 <body>
   <div class="container">
     <div class="col-md-12">
-
+<style>
+  .container{
+    background-color: #C77E36;
+    
+    
+  }
+  
+</style>
     <h1> Order Form </h1>
 
-    <p> Let us know what you would like and your payment information </p>
+    <p> Please select your order </p>
     (Notice: order will ship in 5-6 days, you can only change 1 item per order! </p>
 
 
@@ -25,7 +40,7 @@
         <h2> Choose Your Stlye and Size </h2>
 
         <select id="mySelect" name="select">
-          <option>Choose Violin </option>
+          <option>Choose Item</option>
           <option id="model">Violin</option>
           <option id="bow">Bow</option>
           <option id="case">Case</option>
@@ -34,48 +49,66 @@
         <br>
 
         <label class="model-list radio-inline">
-          <input type="radio" name="colour" value="Mermaid Teal"> Mermaid Teal
+          <input type="radio" name="colour" value="violin">Oak Violin
         </label>
 
         <label class="model-list radio-inline">
-          <input type="radio" name="colour" value="Raindbow Road"> Rainbow Road
+          <input type="radio" name="colour" value="violin"> Maple Voilin
         </label>
 
         <label class="model-list radio-inline">
-          <input type="radio" name="colour" value="Mermaid Teal"> Dark Waterfal
+          <input type="radio" name="colour" value="violin"> Spruce Voilin
         </label>
 
         <label class="bow-list radio-inline">
-          <input type="radio" name="colour" value="Pink Bag"> Pink Bag
+          <input type="radio" name="colour" value="bow"> Fiber Glass Bow
         </label>
 
         <label class="bow-list radio-inline">
-          <input type="radio" name="colour" value="Flower Sunglasses"> Flower Sunglasses
+          <input type="radio" name="colour" value="bow"> Carbon Fiber Bow
         </label>
 
         <label class="bow-list radio-inline">
-          <input type="radio" name="colour" value="Black Sunglasses"> Black Sunglasses
+          <input type="radio" name="colour" value="bow"> Pernumbuco Wood Bow
         </label>
 
         <label class="case-list radio-inline">
-          <input type="radio" name="colour" value="Ocean Blue"> Ocean Blue
+          <input type="radio" name="colour" value="bow"> Brazil Wood Bow
         </label>
 
         <label class="case-list radio-inline">
-          <input type="radio" name="colour" value="Checkerboard"> Checkerboard
+          <input type="radio" name="colour" value="case"> 1007 “Puffy”
         </label>
 
         <label class="case-list radio-inline">
-          <input type="radio" name="colour" value="Multicolour"> Multicolour
+          <input type="radio" name="colour" value="case"> Eagle Hill-Style
         </label>
 
 <div>
         <select id="mySelect" name="select">
-          <option>Choose A Size </option>
+          <option>Choose A Violin Size </option>
           <option id="sml">1/4</option>
           <option id="med">2/4</option>
           <option id="lrg">3/4</option>
           <option id="xlarge">4/4 </option>
+        </select>
+      </div>
+      <div>
+        <select id="mySelectCase" name="select">
+          <option>Choose A Violin Case Size </option>
+          <option id="sml">1/4</option>
+          <option id="med">2/4</option>
+          <option id="lrg">3/4</option>
+          <option id="xlarge">4/4 </option>
+        </select>
+      </div>
+      <div>
+        <select id="mySelectColour" name="select">
+          <option>Choose A Violin Case Colour </option>
+          <option id="sml">Black</option>
+          <option id="med">Pink</option>
+          <option id="lrg">Blue</option>
+          <option id="xlarge">Red </option>
         </select>
       </div>
 
