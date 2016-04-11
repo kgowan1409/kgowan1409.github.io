@@ -6,7 +6,7 @@ $.getJSON("fJsonDatabase/sizing.json" ,function(data){
   console.log("data"+data)
 // for the table to appear 
 var html="<table class='table table-hover table-striped'>"+
-"<tr><th>Violin Size</th><th>Arm Length</th><th>Company</th><th>Approxamate Age</th></tr>";
+"<tr><th>Violin Size</th><th>Arm Length</th><th>Approxamate Age</th></tr>";
   $.each(data, function(index, item){
   //  $("#data").append(item.name);
 
