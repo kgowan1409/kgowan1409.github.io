@@ -8,23 +8,23 @@ $(document).ready(function(){
 // nts : put and id on all the nav tabs too ____
 
 
-// Js for the Models Page
+// Js for the Sizing Page
 $(document).ready(function(){
-$("#getModels").on("click",function(){
+$("#getSizing").on("click",function(){
   console.log("click")
 
-$.getJSON("Final_JsonDatabase/Models.json" ,function(data){
+$.getJSON("fJsonDatabase/sizing.json" ,function(data){
   console.log("data"+data)
 // Code  for the table
 var html="<table class='table table-hover table-striped'>"+
-"<tr><th>Name</th><th>age</th><th>Company</th></tr>";
+"<tr><th>Violin Size</th><th>Arm Length</th><th>Approxamate age</th></tr>";
   $.each(data, function(index, item){
   //  $("#data").append(item.name);
 
 html+="<tr>"+
-"<td>" +item.name +"</td>"+
+"<td>" +item.size +"</td>"+
+"<td>"+item.length + "</td>"+
 "<td>"+item.age + "</td>"+
-"<td>"+item.company + "</td>"+
 //"<td>"+item.picture + "</td>"+
 "</tr>";
   }) // each end
