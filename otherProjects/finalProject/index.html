@@ -26,7 +26,24 @@ body{
 .bs-example{
 	margin: 20px;
 }
+div.background {
+    background: url(klematis.jpg) repeat;
+    border: 2px solid black;
+}
 
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
 </style>
 </head>
 <body>
@@ -75,7 +92,10 @@ body{
     <div class="container">
 <p>Like us on Facebook! <button id="like" type="heart" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span> </button> </p>
 </div>
-
+<div class="background">
+  <div class="transbox">
+   
+ 
   <h1>String Expression</h1>
         <!--   <div class="bs-example bg-warning">
               <form>
@@ -101,7 +121,8 @@ body{
    <!-- add as footer-->
 
 
-
+ </div>
+</div>
   </div>
 
 
