@@ -22,7 +22,11 @@ html+="<tr>"+
   $("#data").append(html);
   //alert(data);
   //console.dir(data);
-
+document.getElementById('button').onclick = (function() {
+document.getElementsByTagName('audio')[0].play();
+document.getElementsByTagName('span')[0].innerHTML = 'Have Fun!';
+    return false;
+});
 })// get json end
 
 }) // click end
