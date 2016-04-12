@@ -83,7 +83,9 @@ formData.each(function(){
     myCheckValues.push($(this).val());
   }); //each end
 
+
   $("#log").append("<br> " + mySelect); //spits back out what has been selected after the submit button has been pressed
+  return ("#log").value;
   $("#log").append("<br>Your Item: " + myRadio);
   $("#log").append("<br>Checked: " + myCheckValues);
   $("#log").append("<br>Card Name: " + myInput);
