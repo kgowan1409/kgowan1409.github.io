@@ -82,18 +82,18 @@ formData.each(function(){
   $("[name='season']:checked").each(function() {
     myCheckValues.push($(this).val());
   }); //each end
-
+$("#log").append("<br> Just Checking Your Order);
   $("#log").append("<br> " + mySelect);
-  $("#log").append("<br>Select your Item " + myRadio);
-  $("#log").append("<br>Value of checkbox is: " + myCheckValues);
-  $("#log").append("<br>Enter your card name " + myInput);
-  $("#log").append("<br>Enter your security code " + securityCode);
-  $("#log").append("<br>Enter the month of your card's expiry date " + month);
-  $("#log").append("<br>Enter the year of your card's expiry date " + expire);
-  $("#log").append("<br>Enter your address " + address);
-  $("#log").append("<br>Enter your state " + state);
-  $("#log").append("<br>Enter your zip code " + zip);
-  $("#log").append("<br>Enter your country " + country);
+  $("#log").append("<br>Your Item: " + myRadio);
+  $("#log").append("<br>Checked: " + myCheckValues);
+  $("#log").append("<br>Card Name: " + myInput);
+  $("#log").append("<br>Security Code: " + securityCode);
+  $("#log").append("<br>Month of your card's expiry date: " + month);
+  $("#log").append("<br>Year of your card's expiry date: " + expire);
+  $("#log").append("<br>Address: " + address);
+  $("#log").append("<br>State: " + state);
+  $("#log").append("<br>Zip code: " + zip);
+  $("#log").append("<br>Country: " + country);
 
 $(document).ready(function(){
 if("#log">= 0).hide()
