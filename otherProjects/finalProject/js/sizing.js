@@ -23,7 +23,6 @@ html+="<tr>"+
   //alert(data);
   //console.dir(data);
 
-
 })// get json end
 
 }) // click end
