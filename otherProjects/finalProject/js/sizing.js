@@ -1,7 +1,7 @@
 $(document).ready(function(){
 $("#getSizing").on("click",function(){
   console.log("click")
-}
+  
 $.getJSON("fJsonDatabase/sizing.json", function(data){
   console.log("data"+data)
 // for the table to appear 
