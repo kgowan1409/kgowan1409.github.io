@@ -81,19 +81,30 @@ formData.each(function(){
     myCheckValues.push($(this).val());
   }); //each end
 
-
+$(document).ready(function(){
+  console.log("Your order consists of the Following")
   $("#log").append("<br> " + mySelect); //spits back out what has been selected after the submit button has been pressed
   return ("#log").value;
   $("#log").append("<br>Your Item: " + myRadio);
+  return ("#log").value;
   $("#log").append("<br>Checked: " + myCheckValues);
+  return ("#log").value;
   $("#log").append("<br>Card Name: " + myInput);
+  return ("#log").value;
   $("#log").append("<br>Security Code: " + securityCode);
+  return ("#log").value;
   $("#log").append("<br>Month of your card's expiry date: " + month);
+  return ("#log").value;
   $("#log").append("<br>Year of your card's expiry date: " + expire);
+  return ("#log").value;
   $("#log").append("<br>Address: " + address);
+  return ("#log").value;
   $("#log").append("<br>State: " + state);
+  return ("#log").value;
   $("#log").append("<br>Zip code: " + zip);
+  return ("#log").value;
   $("#log").append("<br>Country: " + country);
+  return ("#log").value;
 
   
 }) //my button click end
