@@ -17,6 +17,8 @@ display: none;
 }
 
 .browseContainer{
-  background-color:black;
+  background-image:url(fimages/stringexpressions.png) no-repeat;
+  right:0px;
+  top:0px;
   
 }
