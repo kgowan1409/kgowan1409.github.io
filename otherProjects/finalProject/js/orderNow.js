@@ -5,13 +5,13 @@ $(document).ready(function(){
 // button to change when mouse is over button
 $("#submitButton").on("mouseenter", function(){
 
-  $(this).text("Complete Your Order!")
+  $(this).text("Done!")
 
   })
 //when mouse is off of button
 .on("mouseleave", function(){
 
-      $(this).text("Click Me!")
+      $(this).text("Submit!")
 
 
  }) // end mouse
