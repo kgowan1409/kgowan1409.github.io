@@ -1,6 +1,6 @@
 $(document).ready(function(){
 $("#getSizing").on("click",function(){
-  console.log("click")
+  
   
 $.getJSON("http://kgowan1409.github.io/otherProjects/finalProject/fJsonDatabase/sizing.json", function(data){
   console.log("data"+data)
