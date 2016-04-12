@@ -22,8 +22,8 @@ html+="<tr>"+
   $("#data").append(html);
   //alert(data);
   //console.dir(data);
-document.getElementById('button').onclick = (function() {
-document.getElementsByTagName('audio')[0].play();
+$(document).getElementById('button').onclick = (function() {
+$(document).getElementsByTagName('audio')[0].play();
     return false;
     
 });
