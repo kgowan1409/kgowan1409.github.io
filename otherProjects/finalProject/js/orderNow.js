@@ -82,7 +82,7 @@ formData.each(function(){
   $("[name='season']:checked").each(function() {
     myCheckValues.push($(this).val());
   }); //each end
-$("#log").append("<br> Just Checking Your Order);
+$("#log").append("<br> Just Checking Your Order" +myImput);
   $("#log").append("<br> " + mySelect);
   $("#log").append("<br>Your Item: " + myRadio);
   $("#log").append("<br>Checked: " + myCheckValues);
