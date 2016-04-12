@@ -27,8 +27,7 @@ document.getElementsByTagName('audio')[0].play();
     return false;
     
 });
-document.getElementById('button').ondblclick = (function() {
-} 
+
 })// get json end
 
 }) // click end
