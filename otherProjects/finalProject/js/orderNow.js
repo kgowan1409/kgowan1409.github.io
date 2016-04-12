@@ -95,7 +95,9 @@ formData.each(function(){
   $("#log").append("<br>Enter your zip code " + zip);
   $("#log").append("<br>Enter your country " + country);
 
-
+$(document).ready(function(){
+if("#log">= 0).hide()
+  
 }) //my button click end
 
 
