@@ -1,6 +1,6 @@
 /*Style for about page */
 .extras{
-background-color:#C2C9CC;
+background
 }
 
 /* Styling For the Browse Page */
@@ -27,5 +27,6 @@ display: none;
 }
 
 body{
-    background-image:url(../fimages/3968_violin1.jpg);
+    background-color:#C2C9CC;
+   
   }
