@@ -95,8 +95,6 @@ $("#log").append("<br> Just Checking Your Order" +myImput);
   $("#log").append("<br>Zip code: " + zip);
   $("#log").append("<br>Country: " + country);
 
-$(document).ready(function(){
-if("#log">= 0).hide()
   
 }) //my button click end
 
