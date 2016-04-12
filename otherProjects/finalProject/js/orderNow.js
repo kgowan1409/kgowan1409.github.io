@@ -2,16 +2,16 @@
 
 $(document).ready(function(){
 
-// button to change when mouse is over button
-$("#submitButton").on("mouseenter", function(){
 
-  $(this).text("Done!")
+$("#submitButton").on("mouseenter", function(){ // button to change when mouse is over button
+
+  $(this).text("Done!") //when the mouse is on the button it says Done!
 
   })
-//when mouse is off of button
-.on("mouseleave", function(){
 
-      $(this).text("Submit!")
+.on("mouseleave", function(){//mouse leaves button
+
+      $(this).text("Submit!")//when mouse is off of button it sas Submit!
 
 
  }) // end mouse
@@ -21,18 +21,18 @@ $("#submitButton").on("mouseenter", function(){
 //$(document).ready(function(){
 $("#submitButton").on("click",function (){
    //alert("Please Fill in the required space");
-    // alert for final order if not filled out properly
+    
 
-// to put red boxes
- $("input, select").filter(function(){
+
+ $("input, select").filter(function(){ // alert for final order if not filled out properly
  return !this.value;
-   }).closest("div").addClass("has-error");
+   }).closest("div").addClass("has-error"); // to put red boxes
 
 
-// to remove the red error
+
  $("input, select").filter(function(){
 return this.value;
- }).closest("div").removeClass("has-error") ;
+ }).closest("div").removeClass("has-error") ; // to remove the red error
 
 var errors = $(".has-error");
 
@@ -51,15 +51,15 @@ var formData = $("input, select");
 formData.each(function(){
   //get the id
     var id = $(this).attr("id");
-    //set the ofeld and the value
+    //set the field and the value
     order[id] = $(this).val();
 })
 
  alert("sending to our database" + JSON.stringify(order));
  //console.log(JSON.stringify(order))
- $("#successMsg").html("Order Received<br></br> ");
+ $("#successMsg").html("Order Received<br></br> "); //once order is filled out and submitted this will pop up
 
-} // end conf.
+} // end conformation
 
 
 // LOG JS CODE FOR ORDER RECEIPT
@@ -83,7 +83,7 @@ formData.each(function(){
     myCheckValues.push($(this).val());
   }); //each end
 
-  $("#log").append("<br> " + mySelect);
+  $("#log").append("<br> " + mySelect); //spits back out what has been selected after the submit button has been pressed
   $("#log").append("<br>Your Item: " + myRadio);
   $("#log").append("<br>Checked: " + myCheckValues);
   $("#log").append("<br>Card Name: " + myInput);
