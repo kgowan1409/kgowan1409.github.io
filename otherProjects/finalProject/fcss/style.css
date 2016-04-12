@@ -32,3 +32,8 @@ body{
   padding-top:10px;
   padding-left:10px;
 }
+#string{
+  top:0px;
+  right:0px;
+  position:absolute;
+}
