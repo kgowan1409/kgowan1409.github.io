@@ -119,16 +119,16 @@ $("#mySelect").on('change', function(){
 
   $(".radio-inline").hide();
 
-  if(choice == "bikini"){
-    $('.bikini-list').show();
+  if(choice == "violin"){
+    $('.violin-list').show();
   }
 
-else if(choice == "accessories"){
-  $('.accessory-list').show();
+else if(choice == "case"){
+  $('.case-list').show();
 }
 
-else if(choice == "trunks"){
-  $('.trunks-list').show();
+else if(choice == "bow"){
+  $('.bow-list').show();
 }
 });
 
