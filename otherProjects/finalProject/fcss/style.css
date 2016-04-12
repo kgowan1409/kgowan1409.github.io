@@ -11,19 +11,7 @@
 .radio-inline{
 display: none;
 
-}
 
-.browseContainer{
-  background-image:url(../fimages/stringexpressions.png) no-repeat;
-  right:0px;
-  top:0px;
-  width:186px;
-  height:41px;
-  
-}
-.browseContainer img{
-  vertical-align:auto;
-  
 }
 
 body{
@@ -38,4 +26,6 @@ body{
   top:0px;
   right:0px;
   position:absolute;
+  width:186px;
+  height:41px;
 }
