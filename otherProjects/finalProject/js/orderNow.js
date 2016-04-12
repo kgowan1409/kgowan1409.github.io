@@ -18,11 +18,9 @@ $("#submitButton").on("mouseenter", function(){ // button to change when mouse i
 
 // ORDER NOW PAYMENT INFO JS CODE
 
-//$(document).ready(function(){
-$("#submitButton").on("click",function (){
-   //alert("Please Fill in the required space");
-    
 
+$("#submitButton").on("click",function (){//selecting button
+  
 
  $("input, select").filter(function(){ // alert for final order if not filled out properly
  return !this.value;
@@ -56,7 +54,7 @@ formData.each(function(){
 })
 
  alert("sending to our database" + JSON.stringify(order));
- //console.log(JSON.stringify(order))
+ 
  $("#successMsg").html("Order Received<br></br> "); //once order is filled out and submitted this will pop up
 
 } // end conformation
