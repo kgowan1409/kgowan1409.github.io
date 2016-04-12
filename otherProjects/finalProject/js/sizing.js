@@ -2,7 +2,7 @@ $(document).ready(function(){
 $("#getSizing").on("click",function(){
   console.log("click")
   
-$.getJSON("../fJsonDatabase/sizing.json", function(data){
+$.getJSON("http://kgowan1409.github.io/otherProjects/finalProject/fJsonDatabase/sizing.json", function(data){
   console.log("data"+data)
 // for the table to appear 
 var html="<table class='table table-hover table-striped'>"+
