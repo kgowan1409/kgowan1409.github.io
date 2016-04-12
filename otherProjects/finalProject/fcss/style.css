@@ -17,7 +17,7 @@ display: none;
 }
 
 .browseContainer{
-  background-image:url(fimages/stringexpressions.png) no-repeat;
+  background-image:url(../fimages/stringexpressions.png) no-repeat;
   right:0px;
   top:0px;
   
@@ -28,5 +28,5 @@ display: none;
 }
 
 body{
-    background-image:url(fimages/3968_violin1.jpg);
+    background-image:url(../fimages/3968_violin1.jpg);
   }
