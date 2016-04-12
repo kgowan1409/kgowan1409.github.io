@@ -6,7 +6,7 @@ background-image:url(http://kgowan1409.github.io/otherProjects/finalProject/fima
 
 /* Styling For the Browse Page */
 .collection{
-clear:right;
+
 }
 
 /* order now css  */
@@ -20,6 +20,10 @@ display: none;
   background-image:url(fimages/stringexpressions.png) no-repeat;
   right:0px;
   top:0px;
+  
+}
+.browseContainer img{
+  vertical-align:auto;
   
 }
 
