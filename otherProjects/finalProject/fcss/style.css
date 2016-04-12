@@ -7,17 +7,16 @@ background-image:url(http://kgowan1409.github.io/otherProjects/finalProject/fima
 /* Styling For the Browse Page */
 .collection{
 
-
-
-
-
 }
-
-
 
 /* order now css  */
 
 .radio-inline{
 display: none;
 
+}
+
+.browseContainer{
+  background-color:black;
+  
 }
