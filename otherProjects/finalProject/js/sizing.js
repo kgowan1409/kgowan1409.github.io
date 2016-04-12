@@ -24,9 +24,11 @@ html+="<tr>"+
   //console.dir(data);
 document.getElementById('button').onclick = (function() {
 document.getElementsByTagName('audio')[0].play();
-document.getElementsByTagName('span')[0].innerHTML = 'Have Fun!';
     return false;
+    
 });
+document.getElementById('button').ondblclick = (function() {
+} 
 })// get json end
 
 }) // click end
