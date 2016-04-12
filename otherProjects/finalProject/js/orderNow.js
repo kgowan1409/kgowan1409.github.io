@@ -109,7 +109,7 @@ if("#log">= 0).hide()
 
 // reset button on order page
 
-  $("#change").on("click", function(){
+  $("#glyphicon glyphicon-refresh").on("click", function(){
   alert("Your Order Has been reset!");
   })
 
