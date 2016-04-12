@@ -83,17 +83,17 @@ formData.each(function(){
     myCheckValues.push($(this).val());
   }); //each end
 
-  $("#log").append("<br>Value of select is: " + mySelect);
-  $("#log").append("<br>Value of radio button is: " + myRadio);
+  $("#log").append("<br> " + mySelect);
+  $("#log").append("<br>Select your Item " + myRadio);
   $("#log").append("<br>Value of checkbox is: " + myCheckValues);
-  $("#log").append("<br>Value of input is: " + myInput);
-  $("#log").append("<br>Value of input is: " + securityCode);
-  $("#log").append("<br>Value of input is: " + month);
-  $("#log").append("<br>Value of input is: " + expire);
-  $("#log").append("<br>Value of input is: " + address);
-  $("#log").append("<br>Value of input is: " + state);
-  $("#log").append("<br>Value of input is: " + zip);
-  $("#log").append("<br>Value of input is: " + country);
+  $("#log").append("<br>Enter your card name " + myInput);
+  $("#log").append("<br>Enter your security code " + securityCode);
+  $("#log").append("<br>Enter the month of your card's expiry date " + month);
+  $("#log").append("<br>Enter the year of your card's expiry date " + expire);
+  $("#log").append("<br>Enter your address " + address);
+  $("#log").append("<br>Enter your state " + state);
+  $("#log").append("<br>Enter your zip code " + zip);
+  $("#log").append("<br>Enter your country " + country);
 
 
 }) //my button click end
